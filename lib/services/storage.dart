@@ -5,7 +5,6 @@ class Storage {
   final FirebaseStorage _storage = FirebaseStorage.instance;
 
   Future<void> uploadFile(String path, String fileName) async {
-    print('Uploading file: $fileName');
     File file = File(path);
     try {
       await _storage
